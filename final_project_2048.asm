@@ -1,13 +1,9 @@
-TITLE Snake.asm
-
-; A snake game written in assembly using Kip Irvnine's Irvine32 assembly
-; library.
+TITLE 2048.asm
 
 INCLUDE Irvine32.inc
 
 .DATA
 
-; Strings for menu display
 startscreen   BYTE '  ',0ah,0dh
 BYTE ' ',0ah,0dh
 BYTE ' +============================================+',0ah,0dh
@@ -102,6 +98,8 @@ x BYTE 4 DUP(2), 4 DUP(9), 4 DUP(16), 4 DUP(23)
 y BYTE 4 DUP(4,15,26,37)
 
 state BYTE 16 DUP(0)
+
+
 .CODE
 main PROC
 
